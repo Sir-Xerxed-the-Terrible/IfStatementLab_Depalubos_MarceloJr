@@ -1,0 +1,98 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package xerxed;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Student
+ */
+public class Xerxed {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Scanner input=new Scanner(System.in);
+         System.out .println("Hello. I am M.J. L. D."); //Introduction
+        System.out.println("Please Enter your Age"); //The problem in question
+        
+        int a = input.nextInt();
+        int Age = a; //make sure Age is a constant to satisfy problem in question
+        
+        if (a<13) {
+            System.out.println(Age + " which means Your are a child.");} // "" is only for formalities
+        else if (a >= 13 & a <= 19) {
+            System.out.println(Age + "  which means You are a teenager.");} 
+        else {
+            System.out.println(Age +" which means You are an adult.");
+        }
+        
+        System.out.println("Please input today's temperature in Celsius"); //The problem in question (1)
+        
+        double C= input.nextDouble(); // use double since the problem ask for a precise constant which includes the decimals
+        double Celsius = C;
+        
+
+        if (C<0) { 
+            System.out.println("Freezing point");} //the temperature is in the negatives
+        else if (C >= 0 & C <= 25) { 
+            System.out.println("Normal weather.");} //the temperature is on the positves but below certain numbers 
+        else {
+            System.out.println("Hot weather.");}
+        
+    
+        System.out.println("Please enter your test score");
+        
+        int c= input.nextInt(); //Use Int since the problem needs a whole number as an input
+        int Score = c;
+        
+        if (c>=90 & c<=100) {
+            System.out.println("Excellent!");}
+        else if (c>=74 & c<=89) { 
+            System.out.println("Good.");}
+        else if (c>100) {
+            System.out.println("Impossible");
+        }
+        else {
+            System.out.println("Needs Improvement");}
+            
+        
+        System.out.println("Please enter the radius of a circle.");
+        
+        double r= input.nextDouble(); //Double for precise variable
+        double Radius = r;
+        
+        double Area= Math.PI*Math.pow(r, 2); //The Area of a Circle is Pi times radius to the power of 2
+        double Circumference= 2*Math.PI*r; //The Circumference of a Circle is 2 times Pi times Radius
+        
+        if (r<=0) {
+            System.out.println("Invalid radius.");} //Radius cannot go down below zero
+        else if (r>0) {
+            System.out.println("Area = "+ Area +"  And  "+"Circumference = "+Circumference);
+        }
+        
+        System.out.println("Please input an integer.");
+        
+        int I= input.nextInt(); //Int since the problem doesnt need decimals 
+        int number = I;
+        
+        if (number % 2 ==0) {
+            System.out.println(number + " is an even number.");}
+        else {
+            System.out.println(number + " is an odd number.");
+        }
+        }
+        
+                
+                
+                
+                
+        }       
+    
+            
+    
+
